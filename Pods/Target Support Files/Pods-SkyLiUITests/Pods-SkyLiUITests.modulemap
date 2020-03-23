@@ -1,0 +1,6 @@
+framework module Pods_SkyLiUITests {
+  umbrella header "Pods-SkyLiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

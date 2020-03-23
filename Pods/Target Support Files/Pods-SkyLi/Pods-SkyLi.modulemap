@@ -1,0 +1,6 @@
+framework module Pods_SkyLi {
+  umbrella header "Pods-SkyLi-umbrella.h"
+
+  export *
+  module * { export * }
+}
