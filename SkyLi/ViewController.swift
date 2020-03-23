@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         Auth.auth().signIn(with: credential) { (authResult, error) in
           if let error = error {
             let authError = error as NSError
-            if (isMFAEnabled && authError.code == AuthErrorCode.secondFactorRequired.rawValue) {
+            /*if (isMFAEnabled && authError.code == AuthErrorCode.secondFactorRequired.rawValue) {
               // The user is a multi-factor user. Second factor challenge is required.
               let resolver = authError.userInfo[AuthErrorUserInfoMultiFactorResolverKey] as! MultiFactorResolver
               var displayNameString = ""
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
             } else {
               self.showMessagePrompt(error.localizedDescription)
               return
-            }
+            }*/
             // ...
             return
           }
